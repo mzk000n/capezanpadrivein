@@ -1,0 +1,290 @@
+
+/* すべてのWebページに適用される */
+
+body {
+	background-color: #fff;
+	font-family: "Noto Sans JP","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN",Meiryo,メイリオ,sans-serif;
+}
+
+/* PC */
+
+header {
+	display: flex;
+	position: sticky;
+	top: 0;
+	background-color: #fff;
+	justify-content: space-between;
+	padding: 20px 15px;
+	align-items: center;
+}
+.logo {
+	font-size: 25px;
+}
+a {
+	text-decoration: none;
+	color: #333;
+}
+.nav-pc > ul {
+	display: flex;
+	list-style: none;
+}
+.nav-pc a {
+	text-decoration: none;
+	padding-left: 15px;
+	font-size: 17px;
+	color: black;
+}
+
+section {
+	margin: 5px 20px 30px;
+}
+
+#mvsection > img {
+	width: 100%;
+}
+
+.title {
+	font-size: 23px;
+	display: flex;
+	align-items: center;
+}
+.title::before {
+    content: "";
+    height: 1px;
+    flex-grow: 0.1;
+    background-color: #000066;
+	margin-right: 15px;
+}
+.title::after {
+    content: "";
+    height: 1px;
+    flex-grow: 1;
+    background-color: #000066;
+	margin-left: 15px;
+}
+
+section {
+	padding: 20px 150px;
+}
+
+.menu-list {
+	width: 85%;
+	margin: 0 auto;
+}
+.menu-item {
+	display: flex;
+}
+
+.menu-item {
+	padding: 20px;
+
+}
+.menu-photo {
+	width: 30%;
+}
+.menu-group {
+	display: inline-block;
+	margin: 15px 20px;
+}
+
+.menu-name {
+	font-size: 23px;
+	border-bottom: 1px solid #333;
+}
+.menu-item:nth-child(even) {
+	flex-direction: row-reverse;
+  }
+  .menu-text {
+	margin-top: 10px;
+  }
+
+.botton {
+	display:block;
+  height:50px;
+  width: 250px;
+  margin:1em auto;
+  line-height:50px;
+  background-color: darkgrey;
+  color:#fff;
+  border-radius:25px;
+  box-shadow:0 5px 0 gold;
+  text-decoration:none;
+  text-align:center;
+}
+
+.access-info {
+	display: flex;
+	font-size: 18px;
+	margin-top: 20px;
+}
+.map-text {
+	margin:50px 0 0 50px;
+}
+.map-text > div {
+	font-weight: bold;
+}
+
+.contact {
+	margin: 50px;
+	text-align: center;
+}
+.contact-group {
+	display: flex;
+	margin: 50px;
+	justify-content: center;
+}
+.instagram {
+	margin-left: 100px;
+	text-align: center;
+}
+.instagram img {
+	width: 80px;
+}
+.instagram > p {
+	margin-top: 3px;
+	font-weight: bold;
+}
+.tel {
+	padding-top: 20px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* メニューページ　*/
+.menupage {
+	margin: 50px;
+}
+.menupage img {
+	width:100%;
+	margin-top: 50px;
+}
+
+.footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+#menu-sp, #nav-sp {
+	display: none;
+}
+
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+	
+	.logo {
+		font-size: 20px;
+	}
+
+	.nav {
+		display: none;
+	}
+	section {
+		padding: 10px;
+	}
+	.menu-item {
+		display: block;
+	}
+	.menu-photo {
+		width: 100%;
+	}
+	.menu-group {
+		margin: 0 5px 5px 5px;
+	}
+	.menu-name {
+		font-size: 19px;
+	}
+	.access-info {
+		display: block;
+	}
+	iframe {
+		width: 100%;
+		height: 200px;
+	}
+	.map-text {
+		margin: 5px;
+		font-size: 16px;
+	}
+	.contact {
+		margin: 5px;
+	}
+	.contact-group {
+		display: block;
+		margin: 0 10px 10px 10px;
+	}
+	.instagram {
+		margin: 10px 0 0 0;
+	}
+	.footer {
+		font-size: 10px;
+	}
+	body {
+		margin: 0;
+	}
+
+	/* メニュー*/
+	.menupage {
+		margin: 10px;
+	}
+	.menupage p {
+		font-size: 13px;
+	}
+	.nav-pc {
+		display: none;
+	}
+	.menu-name {
+		margin-top: 10px;
+	}
+	#menu-sp {
+		display: block;
+		float: right;
+		padding: 0;
+		width: 30px;
+	}
+	#nav-sp {
+		background-color: #A9A9A9;
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100vh;
+		width: 100%;
+		display: none;
+		z-index: 100;
+	}
+	#close {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 30px;
+	}
+	#logo-sp {
+		margin: 20px 0 30px 20px;
+	}
+
+	#nav-sp > a {
+		display: block;
+	}
+	#nav-sp > a:link {
+		color: #ffffff;
+	}
+	#nav-sp > a:visited {
+		color: #ffffff;
+	}
+	#nav-sp > a:hover {
+		color: #ffffff;
+		text-decoration: underline;
+	}
+	#nav-sp > a:active {
+		color: #ffffff;
+	}
+	#nav-sp > .menu {
+		text-decoration: none;
+		display: block;
+		margin: 0 20px 0 20px;
+		height: 44px;
+		font-size: 16px;
+	}
+
+
+}
