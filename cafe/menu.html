@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CAPE ZANPA DRIVE-IN</title>
+<link rel="stylesheet" href="style.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+/>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+</head>
+<body>
+<div class="wrapper">
+	<!-- ヘッダー　-->
+	<header>
+		<h1 class="logo"><a href="index.html">CAPE ZANPA DRIVE-IN</a></h1>
+				<nav class="nav-pc">
+					<ul>
+						<li><a href="#menusection">MENU</a></li>
+						<li><a href="#spacesection">SPACE</a></li>
+						<li><a href="https://czdrivein.base.shop" target="_blank">SHOP</a></li>
+						<li><a href="#accesssection">ACCESS</a></li>
+						<li><a href="#contactsection">CONTACT</a></li>
+					</ul>
+				</nav>
+				<!-- スマホ用メニュー　-->
+				 <img id="menu-sp" src="image/bars.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+				 <!-- スマホ用ナビゲーション -->
+	<nav id="nav-sp">
+	<img id="close" src="image/ close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+	  <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'">CAPE ZANPA DRIVE-IN</a>
+		 <a class="menu" href="index.html#menusection" onclick="document.getElementById('nav-sp').style.display = 'none'">MENU</a>
+		  <a class="menu" href="index.html#spacesection" onclick="document.getElementById('nav-sp').style.display = 'none'">SPACE</a>
+		  <a class="menu" href="https://czdrivein.base.shop" target="_blank" onclick="document.getElementById('nav-sp').style.display = 'none'">SHOP</a>
+		<a class="menu" href="index.html#accesssection"
+			  onclick="document.getElementById('nav-sp').style.display = 'none'">ACCESS</a>
+		  <a class="menu" href="index.html#contactsection"
+			onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a>
+	</nav>
+		</header>
+	<!-- ヘッダー　ここまで -->
+<div class="menupage">
+    <p>メニューは予告なく変更・売り切れとなる可能性が<br>ございますので予めご了承ください。</p>
+    <img src="image/foodmenu.jpg">
+    <img src="image/drinkmenu.jpeg">
+    <img src="image/alcohol.jpeg">
+</div>  
+<!-- フッター　ここから　-->
+<footer class="footer">
+    <p>&copy;Copyright 2024 CAPE ZNANPA DRIVE-IN. All rights reserved.</p>
+</footer>
+<!-- フッター　ここまで　-->
+</body>
+</html>
